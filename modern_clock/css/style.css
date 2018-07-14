@@ -1,0 +1,58 @@
+/* background-design */
+
+body {
+  margin: 0 auto;
+  background: linear-gradient(80deg, rgb(255, 252, 252), rgb(240, 240, 240) 20%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* clock-design */
+
+.clock {
+  position: relative;
+  min-width: 575px;
+  width: 575px;
+  height: 725px;
+}
+
+.clock img {
+  position: absolute;
+}
+
+.clock-cover {
+  top: 19%;
+  left: 14%;
+  
+}
+
+.hour-hand {
+  top: 16%;
+  left: 48%;
+  transform: rotate(90deg);
+  transform-origin: 50% 100%;
+}
+
+.min-hand {
+  top: 15%;
+  left: 47%;
+  transform: rotate(100deg);
+  transform-origin: 50% 100%;
+}
+
+.sec-hand {
+  top: 14%;
+  left: 48%;
+  transform: rotate(180deg);
+  transform-origin: 50% 100%;
+}
+
+.hidden {
+  overflow: hidden;
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0,0,0,0);
+}
